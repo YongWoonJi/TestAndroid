@@ -1,5 +1,7 @@
 package com.example.tacademy.testandroid;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -37,6 +39,24 @@ public class MainActivity extends AppCompatActivity {
                 String text = getResources().getString(R.string.toast_message);
                 Toast toast = Toast.makeText(MainActivity.this, text, Toast.LENGTH_SHORT);
                 toast.show();
+            }
+        });
+
+        btn = (Button) findViewById(R.id.btn_google);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.google.com"));
+                startActivity(intent);
+            }
+        });
+
+        btn = (Button) findViewById(R.id.btn_dial);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:010-0000-1234"));
+                startActivity(intent);
             }
         });
     }

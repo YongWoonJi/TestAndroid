@@ -51,4 +51,26 @@
         android:layout_below="@+id/text_message"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="24dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Google"
+        android:id="@+id/btn_google"
+        android:layout_below="@+id/btn_toast"
+        android:layout_alignRight="@+id/text_message"
+        android:layout_alignEnd="@+id/text_message"
+        android:layout_marginRight="32dp"
+        android:layout_marginEnd="32dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dial"
+        android:id="@+id/btn_dial"
+        android:layout_alignBottom="@+id/btn_google"
+        android:layout_alignLeft="@+id/text_message"
+        android:layout_alignStart="@+id/text_message"
+        android:layout_marginLeft="33dp"
+        android:layout_marginStart="33dp" />
 </RelativeLayout>
