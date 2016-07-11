@@ -73,4 +73,13 @@
         android:layout_alignStart="@+id/text_message"
         android:layout_marginLeft="33dp"
         android:layout_marginStart="33dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My"
+        android:id="@+id/btn_my"
+        android:layout_below="@+id/btn_google"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView" />
 </RelativeLayout>
